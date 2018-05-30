@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
                 if (!TextUtils.isEmpty(fullName) && !TextUtils.isEmpty(password)) {
                     tryGetUser(fullName, password);
                 }
-
             }
         });
 
@@ -59,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
                 if (!TextUtils.isEmpty(fullName) && !TextUtils.isEmpty(password)) {
                     tryCreateUser(fullName, password);
                 }
-
             }
         });
     }
@@ -79,14 +77,12 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else {
                     showToast(response.body().toString());
-
                     Intent intent= new Intent(getBaseContext(), MenuActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putString("fullName", response.body().getFullName());
                     bundle.putInt("userId", response.body().getId());
                     intent.putExtras(bundle);
                     startActivity(intent);
-
                 }
             }
 

@@ -13,8 +13,6 @@ import android.widget.Toast;
 import com.example.pitalicatvzandroid.R;
 import com.example.pitalicatvzandroid.models.Exam;
 import com.example.pitalicatvzandroid.models.ExamList;
-import com.example.pitalicatvzandroid.models.QuestionResult;
-import com.example.pitalicatvzandroid.models.QuestionResultList;
 import com.example.pitalicatvzandroid.models.User;
 import com.example.pitalicatvzandroid.models.UserList;
 import com.example.pitalicatvzandroid.remote.APIService;

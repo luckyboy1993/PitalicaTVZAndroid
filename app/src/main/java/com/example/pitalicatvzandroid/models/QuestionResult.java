@@ -39,7 +39,6 @@ public class QuestionResult implements Serializable {
     @Expose
     private Exam exam;
 
-
     public int getId() {return id;}
 
     public void setId(int id) {

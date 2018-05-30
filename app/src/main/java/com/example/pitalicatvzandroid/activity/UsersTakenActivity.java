@@ -35,7 +35,6 @@ public class UsersTakenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_taken);
 
-
         final ListView uExamList;
         final Bundle bundle = getIntent().getExtras();
         final UserList userList = (UserList) bundle.getSerializable("userList");
@@ -98,7 +97,6 @@ public class UsersTakenActivity extends AppCompatActivity {
     @Override
     public void onResume() {
         super.onResume();
-
     }
 
 }

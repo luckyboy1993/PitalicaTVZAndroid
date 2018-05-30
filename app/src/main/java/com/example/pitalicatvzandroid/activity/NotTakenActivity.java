@@ -32,7 +32,6 @@ public class NotTakenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_taken);
 
-
         final ListView uExamList;
         final Bundle bundle = getIntent().getExtras();
         final ExamList exams = (ExamList) bundle.getSerializable("exams");

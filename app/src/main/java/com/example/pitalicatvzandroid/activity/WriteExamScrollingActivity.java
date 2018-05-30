@@ -1,8 +1,6 @@
 package com.example.pitalicatvzandroid.activity;
 
-
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -121,7 +119,6 @@ public class WriteExamScrollingActivity extends AppCompatActivity {
 
     public ArrayList<QuestionResult> createExamResults(List<Question> questions, int userId){
         ArrayList<QuestionResult> examResults = new ArrayList<>();
-        QuestionResult questionResult = new QuestionResult();
         View radioGroup;
         View holder;
 
@@ -147,7 +144,6 @@ public class WriteExamScrollingActivity extends AppCompatActivity {
                 }
                 m++;
             }
-
         }
 
         return  examResults;
@@ -172,7 +168,6 @@ public class WriteExamScrollingActivity extends AppCompatActivity {
 
             //shuffling questions
             Collections.shuffle(questions);
-
 
             int m = 0;
             //setting text and answers for each question
@@ -205,10 +200,7 @@ public class WriteExamScrollingActivity extends AppCompatActivity {
 
                     m++;
                     answers.clear();
-                } else {
-
                 }
-
             }
         return questions;
     }

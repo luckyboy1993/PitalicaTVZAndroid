@@ -41,12 +41,9 @@ public class CreateExamScrollingActivity extends AppCompatActivity {
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 tryCreateExam(userId, fullName);
-
             }
         });
-
     }
 
     public void tryCreateExam(final int userId, final String fullName) {
@@ -56,8 +53,6 @@ public class CreateExamScrollingActivity extends AppCompatActivity {
         mAPIService.postExam(exam).enqueue(new Callback<Exam>() {
             @Override
             public void onResponse(Call<Exam> call, Response<Exam> response) {
-//                showResponse(response.body().toString());
-//                showToast(response.body().toString());
                 if(response.body()==null){
                     if(response.raw().code()==404)
                         showResponse("Body = nulls");
@@ -82,6 +77,7 @@ public class CreateExamScrollingActivity extends AppCompatActivity {
         });
     }
 
+    //lost when computer crashed, stayed hardcoded
     public Exam createExam(int id){
         Exam exam = new Exam();
         ArrayList<Question> questions = new ArrayList<>();
