@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/testLayout"
+        tools:context=".activity.WriteExamScrollingActivity">
+
+        <TextView
+            android:id="@+id/testName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:hint="@string/test_name"/>
+
+        <include layout="@layout/write_question_activity" />
+        <include layout="@layout/write_question_activity" />
+        <include layout="@layout/write_question_activity" />
+        <include layout="@layout/write_question_activity" />
+        <include layout="@layout/write_question_activity" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_submit"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
